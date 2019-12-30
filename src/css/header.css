@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "思源黑体 CN Regular";
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    min-width: 1080px;
+    height: 60px;
+    background: linear-gradient(160deg, #e12f54 0%, #5c123a 50%);
+}
+
+
+#nav_center a,
+#nav_right span{
+    display: block;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+}
+#nav_right{
+    cursor: pointer;
+}
+
+#nav{
+    display: flex;
+    height: 60px;
+    margin: 0 100px;
+    justify-content: space-between;
+}
+#nav_left, #nav_center, #nav_right{
+    height: 60px;
+}
+#nav_left img{
+    height: 50px;
+    padding: 5px 0;
+}
+#nav_center{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#nav_right{
+    display: flex;
+    width: 120px;
+}
+#nav_right img{
+    display: block;
+    height: 20px;
+    padding: 20px 0;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#login_back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    display: none;
+}
+#login_mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/login_mask.png");
+    z-index: 1;
+}
+#login{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 #333;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -300px;
+    z-index: 2;
+}
+#login_head{
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#login_head+img{
+    position: absolute;
+    width: 100px;
+    left: 15px;
+    top: 175px;
+}
+#login_head+img+img{
+    position: absolute;
+    width: 22px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#login>div{
+    width: 300px;
+    margin: 0 auto;
+}
+#login #account,
+#login #password{
+    display: block;
+    background: #e1e1e1;
+    width: 300px;
+    height: 46px;
+    border-radius: 8px;
+}
+#login #account{
+    margin-top: 30px;
+}
+#login #password{
+    margin-top: 15px;
+}
+#account input,
+#password input{
+    box-sizing: border-box;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    width: 200px;
+    height: 46px;
+    padding: 8px 0 8px 15px;
+    font-size: 14px;
+}
+input::-webkit-input-placeholder{
+    color: #666;
+}
+#password{
+    position: relative;
+}
+#show_password{
+    position: absolute;
+    width: 24px;
+    right: 0;
+    padding: 11px 15px 11px 0;
+    cursor: pointer;
+}
+#forgot{
+    display: block;
+    font-size: 12px;
+    color: #666;
+    height: 20px;
+    width: 60px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#btn_login{
+    display: block;
+    width: 120px;
+    box-sizing: border-box;
+    border: 0;
+    height: 40px;
+    text-align: center;
+    line-height:40px;
+    color: #fff;
+    font-size: 14px;
+    outline: 0;
+    background: linear-gradient(150deg, #e12f54 30%, #5c123a 100%);
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#btn_login:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px -5px #5c123a;
+}
+#notice{
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 15px;
+}
+#notice a{
+    font-size: 12px;
+    color: #e12f54;
+}

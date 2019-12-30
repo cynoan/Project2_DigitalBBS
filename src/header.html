@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script>
+        function show_login() {
+            var login_layout = document.getElementById("login_back");
+            window.parent.document.body.children[0].style.height = "100%";
+            login_layout.style.display = "block";
+            login_layout.style.animation = "show_ani 0.2s";
+        }
+        function close_login() {
+            var login_layout = document.getElementById("login_back");
+            
+            login_layout.style.animation = "close_ani 0.2s";
+            setTimeout(() => { 
+                login_layout.style.display = "none"; 
+                window.parent.document.body.children[0].style.height = "60px";
+            },150);
+            uname.value = "";
+            upwd.value = "";
+        }
+        function show_pwd() {
+            var upwd = document.getElementById("upwd");
+            upwd.setAttribute("type", "text");
+            setTimeout(() => {
+                upwd.setAttribute("type", "password");
+            }, 1000);
+        }
+        function login() {
+            var $uname = uname.value;
+            var $upwd = upwd.value;
+            if (!$uname || !$upwd) {
+                alert("用户名和密码不能为空");
+                return;
+            }
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var result = xhr.responseText;
+                    if (result == "1") {
+                        alert("登录成功");
+                    } else {
+                        alert("登录失败，请检查用户名和密码");
+                    }
+                }
+            };
+            xhr.open("get", "/user/v1/login/" + $uname + "&" + $upwd, true);
+            xhr.send();
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <div id="nav">
+            <div id="nav_left">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div id="nav_center">
+                <a href="">首页</a>
+                <a href="">新闻</a>
+                <a href="">文章</a>
+                <a href="">兴趣</a>
+                <a href="">闲置</a>
+            </div>
+            <div id="nav_right">
+                <img src="img/search.png" alt="">
+                <span id="a_login" onclick="show_login()">登录</span>
+            </div>
+        </div>
+        <div id="login_back">
+            <div id="login_mask"></div>
+            <div id="login">
+                <img src="img/login_head.png" id="login_head">
+                <img src="img/logo.png" alt="">
+                <img src="img/close.png" onclick="close_login()">
+                <div>
+                    <div id="account">
+                        <input type="text" placeholder="请输入账户" id="uname">
+                    </div>
+                    <div id="password">
+                        <input type="password" placeholder="请输入密码" id="upwd">
+                        <img src="img/password.png" alt="" id="show_password" onclick="show_pwd()">
+                    </div>
+                    <a href="" id="forgot">忘记密码?</a>
+                    <button id="btn_login" onclick="login()">登录</button>
+                    <p id="notice">
+                        登录即同意<a href="">「软件许可及服务协议」</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
