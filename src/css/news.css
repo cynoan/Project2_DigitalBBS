@@ -1,45 +1,57 @@
 @charset "UTF-8";
 
+body{
+    background: #f2f2f2;
+}
+.cate_back{
+    width: 100%;
+    height: 74px;
+    box-shadow: 0 0 45px -30px #333;
+}
 .cate_head{
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    width: 240px;
     height: 74px;
-    box-shadow: 0 0 30px -10px #5c123a;
-    
+    margin: 0 100px;
+    padding-top: 14px;
+    /* border-radius: 30px; */
+    /* padding-left: 20px; */
+    /* box-shadow: 0 0 20px -10px #666; */
 }
 .cate_head>span:first-child{
     display: block;
     font-size: 24px;
-    line-height: 74px;
+    line-height: 46px;
     color: #424e66;
-    margin-left: 100px;
 }
 .cate_head>span:nth-child(2){
     display: block;
     font-size: 24px;
-    line-height: 69px;
+    line-height: 42px;
     color: #424e66;
     margin-left: 10px;
 }
 .cate_head>span:last-child{
     display: block;
     font-size: 16px;
-    line-height: 74px;
+    line-height: 46px;
     color: #666;
     margin-left: 10px;
 }
+
+
 #news_nav{
     width: 100%;
-    min-width: 1080px;
     height: 74px;
+    min-width: 1200px;
 }
 #news_nav>div{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
 }
 #news_nav>div>div{
     width: 74px;
@@ -70,4 +82,197 @@
 }
 #news_nav>div>div:hover>a{
     color: #000;
+}
+
+.article_list{
+    width: 1240px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.sentence{
+    position: relative;
+    width: 590px;
+    height: 360px;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+#s_back{
+    width: 590px;
+    height: 360px;
+    border-radius: 20px;
+}
+.pic_mask{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+#s_mask{
+    width: 590px;
+    height: 360px;
+}
+#s_content{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: 45px;
+    box-sizing: border-box;
+}
+#s_date{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+#s_date #day{
+    display: block;
+    color: #fff;
+    font-size: 35px;
+}
+#s_date #month{
+    margin-top: 12px;
+}
+#s_date #month,
+#s_date #year{
+    display: block;
+    color: #C6C6C6;
+    font-size: 15px;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 5px;
+}
+#s_title{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 40px;
+}
+#s_author{
+    color: #fff;
+    font-size: 15px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.sentence:hover{
+    box-shadow: 0 5px 30px -12px #000;
+}
+.sentence:hover .pic_mask{
+    opacity: 0.2;
+}
+
+#wallpaper{
+    background: url("../img/news/wallpaper.jpg");
+    background-size: 110%;
+    transition: all 0.4s;
+}
+#wallpaper:hover{
+    background-size: 125%;
+    background-position-x: -34px;
+    background-position-y: -30px;
+}
+
+.badge{
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 3px 12px;
+    font-size: 16px;
+    color: #fff;
+    background: url("../img/login_mask.png");
+    border-radius: 15px;
+}
+#pic_title{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.article_block{
+    position: relative;
+    box-sizing: border-box;
+    width: 285px;
+    margin-top: 30px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    background: #fff;
+}
+.article_block:hover{
+    box-shadow: 0 5px 30px -12px #000;
+}
+.article_block .badge{
+    top: 15px;
+    left: 15px;
+}
+.block_pic{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.block_title{
+    display: block;
+    height: 50px;
+    padding: 0 12px;
+    margin-top: 20px;
+    color: #333;
+}
+.block_abstract{
+    display: block;
+    padding: 0 12px;
+    margin-top: 10px;
+    color: #666;
+}
+.block_user{
+    display: flex;
+    height: 30px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.block_avatar{
+    width: 30px;
+    border-radius: 50%;
+}
+.user_name,
+.pub_time{
+    display: block;
+    font-size: 15px;
+    color: #999;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 6px;
+}
+.user_name+span{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    height: 30px;
+    line-height: 30px;
+}
+.block_bottom{
+    display: flex;
+    padding: 0 10px;
+    margin: 10px 0 20px;
+}
+.block_bottom>img{
+    width: 20px;
+    height: 20px;
+}
+.block_bottom>span{
+    color: #999;
+    margin: 0 3px;
+}
+.block_bottom>span:nth-child(2){
+    margin-right: 10px;
 }
