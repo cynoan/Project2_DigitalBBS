@@ -19,9 +19,20 @@ input:-webkit-autofill {
     top: 0;
     z-index: 999;
 }
-/* .header_frame:hover{
-    height: 100%;
-} */
+
 .header_placeholder{
     height: 60px;
+}
+
+html,body{
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    user-select: none;
+}
+body.preload{
+    -webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
 }
