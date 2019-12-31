@@ -1,5 +1,7 @@
 # Project2_DigitalBBS
 项目2，数码论坛
+# Verison1.02
+新闻页板块静态开发。 --- 12/31
 # Verison1.01
 新闻页板块静态开发。 --- 12/30
 # Verison1.0
