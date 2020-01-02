@@ -15,38 +15,42 @@ nav{
     background: linear-gradient(160deg, #e12f54 0%, #5c123a 50%);
 }
 
-
-#nav_center a,
-#nav_right span{
-    display: block;
-    font-size: 15px;
-    line-height: 60px;
-    text-align: center;
-    color: #fff;
-}
-#nav_center a{
-    display: block;
-    width: 60px;
-    height: 42px;
-    line-height: 42px;
-    margin: 9px 0;
-    text-align: center;
-    transition: all 0.2s;
-}
-#nav_center a:hover{
-    box-shadow: 0 0 15px 0 #f2f2f2;
-    border-radius: 15px;
-}
-#nav_right{
-    cursor: pointer;
-}
-
 #nav{
     display: flex;
     height: 60px;
     margin: 0 100px;
     justify-content: space-between;
 }
+
+/* #nav_center a, */
+#nav_right span{
+    display: block;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+#nav_center a{
+    display: block;
+    width: 60px;
+    height: 42px;
+    font-size: 15px;
+    line-height: 42px;
+    margin: 9px 0;
+    color: #ddd;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+#nav_center a:hover{
+    color: #fff;
+    font-size: 17px;
+    /* box-shadow: 0 0 15px 0 #f2f2f2; */
+    /* border-radius: 15px; */
+}
+
+
 #nav_left, #nav_center, #nav_right{
     height: 60px;
 }

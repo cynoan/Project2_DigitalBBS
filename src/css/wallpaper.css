@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.wallpaper{
+    background-size: 110%;
+    transition: all 0.4s;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.wallpaper:hover{
+    background-size: 125%;
+    background-position-x: -34px;
+    background-position-y: -30px;
+}
