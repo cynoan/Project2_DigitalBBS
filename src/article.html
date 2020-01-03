@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>GAGA-文章</title>
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/article.css">
@@ -18,19 +18,335 @@
 <body class="preload">
     <iframe class="header_frame" src="header.html" frameborder="0" scrolling="no"></iframe>
     <div class="header_placeholder"></div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/news/wallpaper/1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/news/wallpaper/2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/news/wallpaper/3.jpg" alt=""></div>
+    <section>
+        <div class="cate_back">
+            <table></table>
+            <div class="cate_head">
+                <div class="cate_title">
+                    <span>文章</span>
+                    <span>|</span>
+                    <span>分享你的数字生活</span>
+                </div>
+                <div id="publish">
+                    <img src="img/article/publish.png">
+                    <span>写文章</span>
+                </div>
+            </div>
         </div>
-        <!-- 如果需要分页器 -->
-        <div class="swiper-pagination"></div>
+        <div id="banner">
+            <div class="swiper-container" id="banner_left">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/article/banner1.png"></div>
+                    <div class="swiper-slide"><img src="img/article/banner2.jpeg"></div>
+                    <div class="swiper-slide"><img src="img/article/banner3.jpeg"></div>
+                    <div class="swiper-slide"><img src="img/article/banner4.png"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
 
-        <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div id="banner_right">
+                <div class="banner_article">
+                    <img src="img/article/ba1.png" class="ba_pic">
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </div>
+                <div class="banner_article">
+                    <img src="img/article/ba2.png" class="ba_pic">
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </div>
+                <div class="banner_article">
+                    <img src="img/article/ba3.jpeg" class="ba_pic">
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </div>
+                <div class="banner_article">
+                    <img src="img/article/ba4.jpeg" class="ba_pic">
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div>
+                <a onclick="allArticle()">
+                    <span>全部</span>
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </a>
+                <a onclick="phone()">
+                    <span>手机</span>
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </a>
+                <a onclick="pad()">
+                    <span>平板</span>
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </a>
+                <a onclick="photo()">
+                    <span>摄影</span>
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </a>
+                <a onclick="life()">
+                    <span>生活</span>
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </a>
+                <a onclick="other()">
+                    <span>其他</span>
+                    <img src="img/news/pic_mask.png" class="ba_mask">
+                </a>
+            </div>
+        </div>
+        <div class="article_list">
+            <div class="col" id="col1">
+                <div class="article_block"">
+                    <img src=" img/article/all/1.jpeg" class="block_pic">
+                    <p class="block_title">徽州三日，山水入梦</p>
+                    <p class="block_abstract">一眠不醒徽州梦2017年，我经历了人生中一次小小的变动。...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/5.jpeg" class="block_pic">
+                    <p class="block_title">柏林2019</p>
+                    <p class="block_abstract">说起来我对柏林的印象，就不得不提到一部电影，中文名是《没...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar1.jpg" class="block_avatar">
+                        <span class="user_name">然然</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/9.jpeg" class="block_pic">
+                    <p class="block_title">替你守护冬日里最后一抹温暖、日本Srue 双人四温区电热毯 深度评测</p>
+                    <p class="block_abstract">一、前言每年一到冬天，就感觉今年的冬天尤为的寒冷、漫长，...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/13.jpeg" class="block_pic">
+                    <p class="block_title">同步桌面、在线播放，2020 年的 OneDrive 可以用来做什么？</p>
+                    <p class="block_abstract">早闻 OneDrive 的大名（那时候还是叫 SkyDr...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="col2">
+                <div class="article_block"">
+                    <img src=" img/article/all/2.jpeg" class="block_pic">
+                    <p class="block_title">VIE Hotel：曼谷人气五星酒店之选</p>
+                    <p class="block_abstract">索菲特美憬阁 VIE 酒店（VIE Hotel Bang...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar1.jpg" class="block_avatar">
+                        <span class="user_name">然然</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/6.jpeg" class="block_pic">
+                    <p class="block_title">适马 50-100 F/1.8，我的第一支变焦镜头轻体验</p>
+                    <p class="block_abstract">▲这是第一台属于我自己的相机-富士 X100，它下面的盒...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar1.jpg" class="block_avatar">
+                        <span class="user_name">然然</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/10.png" class="block_pic">
+                    <p class="block_title">「搞机大赛」2019 年装过的十多套主机配置，总有一套适合你</p>
+                    <p class="block_abstract">去年就想过把自己去年帮网友装过的一些主机配置做一个整理回...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar1.jpg" class="block_avatar">
+                        <span class="user_name">然然</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/14.jpeg" class="block_pic">
+                    <p class="block_title">199元交个朋友，高性价比动圈设计，坚果颈挂蓝牙耳机体验</p>
+                    <p class="block_abstract">2019年，坚果手机历经风风雨雨，终究是挺了过去，不仅推...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="col3">
+                <div class="article_block"">
+                    <img src=" img/article/all/3.jpeg" class="block_pic">
+                    <p class="block_title">外形酷炫，谱写红与黑的战歌、乔思伯MOD1全塔式机箱 评测</p>
+                    <p class="block_abstract">一、前言乔思伯的MOD系列机箱外形都非常的酷炫夸张，用料...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/7.jpeg" class="block_pic">
+                    <p class="block_title">2020工作计划</p>
+                    <p class="block_abstract"></p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/11.jpeg" class="block_pic">
+                    <p class="block_title">我的桌面配置</p>
+                    <p class="block_abstract">去年8月份换了工作，搬到西安来，租了套大房子终于可以划出...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="col4">
+                <div class="article_block"">
+                    <img src=" img/article/all/4.jpeg" class="block_pic">
+                    <p class="block_title">办公游戏两相宜，达尔优A918无线鼠标体验</p>
+                    <p class="block_abstract">对于大多数人来说，除了手机，每天接触最多的数码产品就要属...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/8.jpeg" class="block_pic">
+                    <p class="block_title">2019年终总结</p>
+                    <p class="block_abstract">仪式感挺讨厌的，当你做了往年总结，每到这个时候，总会想个...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+                <div class="article_block"">
+                    <img src=" img/article/all/12.jpeg" class="block_pic">
+                    <p class="block_title">求推荐iPadU盘或U盘转接器</p>
+                    <p class="block_abstract">升级iOS13后，最近笔记本直接奔溃。新老交替之间也想看...</p>
+                    <div class="block_user">
+                        <img src="img/news/avatar2.jpg" class="block_avatar">
+                        <span class="user_name">小黄鸭</span>
+                        <span>|</span>
+                        <span class="pub_time">5分钟前</span>
+                    </div>
+                    <div class="block_bottom">
+                        <img src="img/news/like.png">
+                        <span>99+</span>
+                        <img src="img/news/comment.png">
+                        <span>99+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="load_more">加载更多</div>
+        <div id="to_top" onclick="toTop()"></div>
+    </section>
 </body>
 <script src="js/article.js"></script>
+
 </html>

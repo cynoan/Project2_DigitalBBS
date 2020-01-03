@@ -2,7 +2,7 @@
 
 
 body{
-    background: #f2f2f2;
+    background: #f0f0f0;
 }
 
 .cate_back{
@@ -14,13 +14,10 @@ body{
 .cate_head{
     display: flex;
     justify-content: flex-start;
-    width: 240px;
+    width: 1200px;
     height: 74px;
-    margin: 0 100px;
+    margin: 0 auto;
     padding-top: 14px;
-    /* border-radius: 30px; */
-    /* padding-left: 20px; */
-    /* box-shadow: 0 0 20px -10px #666; */
 }
 .cate_head>span:first-child{
     display: block;
@@ -319,7 +316,7 @@ body{
     position: fixed;
     display: none;
     right: 20px;
-    bottom: 30px;
+    bottom: 60px;
     width: 50px;
     height: 50px;
     background-image: url("../img/totop.png");

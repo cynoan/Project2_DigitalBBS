@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GAGA-兴趣</title>
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/interest.css">
+    <script src="js/clearLoadAni.js"></script>
+    <script src="js/comm.js"></script>
+</head>
+
+<body class="preload">
+    <iframe class="header_frame" src="header.html" frameborder="0" scrolling="no"></iframe>
+    <div class="header_placeholder"></div>
+    <section>
+        <div class="cate_back">
+            <table></table>
+            <div class="cate_head">
+                <div class="cate_title">
+                    <span>动态</span>
+                    <span>|</span>
+                    <span>随时分享</span>
+                </div>
+                <div id="publish">
+                    <img src="img/interest/write.png">
+                    <span>发动态</span>
+                </div>
+            </div>
+        </div>
+        <div id="sms_list">
+            <div id="publish_sms">
+                <textarea name="" id="sms" oninput="setHeight(this)"></textarea>
+                <div id="pub_bottom">
+                    <div id="pb_left">
+                        <div id="emotion"></div>
+                        <div id="photo"></div>
+                        <div id="tag"></div>
+                    </div>
+                    <div id="pb_right">发 布</div>
+                </div>
+            </div>
+            <div id="publish_login">
+                <div>
+                    <img src="img/interest/blank_avatar.png">
+                    <span>你还未登录...</span>
+                </div>
+                <div id="pb_login_btn">登录</div>
+            </div>
+            <div id="hot_tags">
+                <div id="hot_badge">热门话题</div>
+                <div id="tag_list">
+                    <div class="tag">有奖征集丨小寒怎么过？</div>
+                    <div class="tag">除了 AJ ，你还珍藏了什么球鞋？</div>
+                    <div class="tag">有什么话想对 2019 的自己说？</div>
+                    <div class="tag">打卡：每天坚持拍一张照片</div>
+                </div>
+            </div>
+        </div>
+        <div id="to_top" onclick="toTop()"></div>
+    </section>
+</body>
+<script>
+    function setHeight(obj) {
+        obj.style.cssText = 'height:auto; padding:0';
+        obj.style.cssText = 'height:' + obj.scrollHeight + 'px';
+    }
+</script>
+
+</html>
