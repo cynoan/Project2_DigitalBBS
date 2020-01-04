@@ -89,7 +89,7 @@ body{
     margin-top: 7px;
     background-size: cover !important;
     cursor: pointer;
-    transition: all 0.15s;
+    transition: all 0.2s;
 }
 #pb_left #emotion{
     background: url("../img/interest/emotion.png");
@@ -124,7 +124,7 @@ body{
     color: #fff;
     text-align: center;
     line-height: 36px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 #pb_right:hover{
     transform: scale(1.02);
@@ -168,6 +168,15 @@ body{
     line-height: 36px;
     transition: all 0.3s;
     margin-top: 17px;
+
+}
+#hot_tags{
+    width: 700px;
+    margin: 30px auto 0;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 #hot_badge{
@@ -181,15 +190,12 @@ body{
     background:#999;
     border-radius: 15px;
 }
-#hot_tags{
-    width: 700px;
-    margin: 30px auto 0;
-}
+
 #tag_list{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 700px;
+    width: 100%;
     margin-top: 20px;
 }
 #tag_list .tag{
@@ -200,6 +206,8 @@ body{
     color: #fff;
     padding: 0 10px;
     padding-top: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 .tag:nth-child(1){
     background: linear-gradient(100deg, #D463CB 0%, #EC7979 100%);
@@ -213,6 +221,164 @@ body{
 .tag:nth-child(4){
     background: linear-gradient(100deg, #87E4FA 5%, #4FC5F2 100%);
 }
+#tag_list .tag:hover{
+    box-shadow: 0 10px 20px -8px #586785;
+}
+
+#interest_list{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 700px;
+    margin: 20px auto 0;
+}
+.in_block{
+    width: 700px;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+.in_head{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.head_left{
+    display: flex;
+}
+.in_avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px -10px #C6C6C6;
+    cursor: pointer;
+}
+.in_info{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.in_name{
+    color: #435771;
+    font-size: 16px;
+}
+.in_time{
+    color: #C6C6C6;
+    font-size: 14px;
+}
+.head_right{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    background: #999;
+    opacity: 0.8;
+    color: #fff;
+    line-height: 50px;
+    transition: all 0.3s;
+    border-radius: 25px;
+}
+.in_follow{
+    width: 80px;
+    height: 38px;
+    text-align: center;
+    color: #424e66;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    margin-right: 15px;
+    margin-left: 6px;
+    margin-top: 6px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px -10px #5c123a;
+    transition: all 0.3s;
+}
+.in_follow:hover{
+    transform: scale(1.1);
+    margin-left: 8px;
+    margin-right: 13px;
+}
+.head_r{
+    display: none;
+}
+.report{
+    background: #d4002a;
+    color: #fff;
+}
+
+.in_more{
+    width: 32px;
+    height: 32px;
+    background: url("../img/interest/list/more.png");
+    background-size: 100%;
+    margin-top: 9px;
+    cursor: pointer;
+}
+.in_content{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.in_content>p{
+    font-size: 20px;
+    color: #111;
+}
+.in_content>img{
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+#ib1 .in_avatar{
+    background: url("../img/interest/list/avatar2.jpg");
+    background-size: 100%;
+}
+#ib2 .in_avatar{
+    background: url("../img/interest/list/avatar1.jpg");
+    background-size: 100%;
+}
+#ib3 .in_avatar{
+    background: url("../img/interest/list/avatar2.jpg");
+    background-size: 100%;
+}
+#ib4 .in_avatar{
+    background: url("../img/interest/list/avatar1.jpg");
+    background-size: 100%;
+}
+
+.in_tag{
+    display: block;
+    font-size: 16px;
+    color: #424e66;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.in_bottom{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.in_bottom>img{
+    width: 22px;
+    height: 22px;
+}
+.in_bottom>.in_like{
+    height: 22px;
+    width: 26px;
+}
+.in_bottom>span{
+    margin-left: 5px;
+    margin-right: 20px;
+    color: #999;
+}
+
+
 
 #to_top{
     position: fixed;

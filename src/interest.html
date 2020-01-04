@@ -33,7 +33,7 @@
         </div>
         <div id="sms_list">
             <div id="publish_sms">
-                <textarea name="" id="sms" oninput="setHeight(this)"></textarea>
+                <textarea name="" id="sms" oninput="setHeight(this)" placeholder="随手分享一下..."></textarea>
                 <div id="pub_bottom">
                     <div id="pb_left">
                         <div id="emotion"></div>
@@ -59,10 +59,141 @@
                     <div class="tag">打卡：每天坚持拍一张照片</div>
                 </div>
             </div>
+            <div id="interest_list">
+                <div class="in_block" id="ib1">
+                    <div class="in_head">
+                        <div class="head_left">
+                            <div class="in_avatar"></div>
+                            <div class="in_info">
+                                <span class="in_name">小黄鸭</span>
+                                <span class="in_time">5分钟前</span>
+                            </div>
+                        </div>
+                        <div class="head_right head_f">
+                            <a class="in_follow follow">关 注</a>
+                            <div class="in_more follow_btn" onclick="switchTo(0,'f')"></div>
+                        </div>
+                        <div class="head_right head_r">
+                            <a class="in_follow report">举 报</a>
+                            <div class="in_more report_btn" onclick="switchTo(0,'r')"></div>
+                        </div>
+                    </div>
+                    <div class="in_content">
+                        <p>年底了，来说说年终奖有多少？今年攒了多少钱？</p>
+                        <img src="img/interest/list/pic1.jpeg">
+                    </div>
+                    <a class="in_tag">#GAGA生活</a>
+                    <div class="in_bottom">
+                        <img src="img/interest/list/like.png" class="in_like">
+                        <span class="like_count">6</span>
+                        <img src="img/interest/list/comment.png" class="in_com">
+                        <span class="com_count">10</span>
+                        <img src="img/interest/list/relay.png" class="in_relay">
+                        <span class="relay_count">3</span>
+                    </div>
+                </div>
+                <div class="in_block" id="ib2">
+                    <div class="in_head">
+                        <div class="head_left">
+                            <div class="in_avatar"></div>
+                            <div class="in_info">
+                                <span class="in_name">然然</span>
+                                <span class="in_time">5分钟前</span>
+                            </div>
+                        </div>
+                        <div class="head_right head_f">
+                            <a class="in_follow follow">关 注</a>
+                            <div class="in_more follow_btn" onclick="switchTo(1,'f')"></div>
+                        </div>
+                        <div class="head_right head_r">
+                            <a class="in_follow report">举 报</a>
+                            <div class="in_more report_btn" onclick="switchTo(1,'r')"></div>
+                        </div>
+                    </div>
+                    <div class="in_content">
+                        <p>399小鲁班上车成功 够玩好久</p>
+                        <img src="img/interest/list/pic2.jpeg">
+                    </div>
+                    <a class="in_tag">#GAGA生活</a>
+                    <div class="in_bottom">
+                        <img src="img/interest/list/like.png" class="in_like">
+                        <span class="like_count">10</span>
+                        <img src="img/interest/list/comment.png" class="in_com">
+                        <span class="com_count">9</span>
+                        <img src="img/interest/list/relay.png" class="in_relay">
+                        <span class="relay_count">2</span>
+                    </div>
+                </div>
+                <div class="in_block" id="ib3">
+                    <div class="in_head">
+                        <div class="head_left">
+                            <div class="in_avatar"></div>
+                            <div class="in_info">
+                                <span class="in_name">小黄鸭</span>
+                                <span class="in_time">15分钟前</span>
+                            </div>
+                        </div>
+                        <div class="head_right head_f">
+                            <a class="in_follow follow">关 注</a>
+                            <div class="in_more follow_btn" onclick="switchTo(2,'f')"></div>
+                        </div>
+                        <div class="head_right head_r">
+                            <a class="in_follow report">举 报</a>
+                            <div class="in_more report_btn" onclick="switchTo(2,'r')"></div>
+                        </div>
+                    </div>
+                    <div class="in_content">
+                        <p>如果找不到自己的热爱了怎么办？</p>
+                        <img src="img/interest/list/pic3.jpeg">
+                    </div>
+                    <a class="in_tag">#GAGA生活</a>
+                    <div class="in_bottom">
+                        <img src="img/interest/list/like.png" class="in_like">
+                        <span class="like_count">99+</span>
+                        <img src="img/interest/list/comment.png" class="in_com">
+                        <span class="com_count">99+</span>
+                        <img src="img/interest/list/relay.png" class="in_relay">
+                        <span class="relay_count">60</span>
+                    </div>
+                </div>
+                <div class="in_block" id="ib4">
+                    <div class="in_head">
+                        <div class="head_left">
+                            <div class="in_avatar"></div>
+                            <div class="in_info">
+                                <span class="in_name">然然</span>
+                                <span class="in_time">5分钟前</span>
+                            </div>
+                        </div>
+                        <div class="head_right head_f">
+                            <a class="in_follow follow">关 注</a>
+                            <div class="in_more follow_btn" onclick="switchTo(3,'f')"></div>
+                        </div>
+                        <div class="head_right head_r">
+                            <a class="in_follow report">举 报</a>
+                            <div class="in_more report_btn" onclick="switchTo(3,'r')"></div>
+                        </div>
+                    </div>
+                    <div class="in_content">
+                        <p>真的是没事找事，好好的一个周末就这样被你搞砸了！你如果不想过直接跟我说好吧？明天就去扯离婚证…</p>
+                        <img src="img/interest/list/pic4.jpeg">
+                    </div>
+                    <a class="in_tag">#GAGA生活</a>
+                    <div class="in_bottom">
+                        <img src="img/interest/list/like.png" class="in_like">
+                        <span class="like_count">23</span>
+                        <img src="img/interest/list/comment.png" class="in_com">
+                        <span class="com_count">10</span>
+                        <img src="img/interest/list/relay.png" class="in_relay">
+                        <span class="relay_count">85</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="to_top" onclick="toTop()"></div>
     </section>
 </body>
+<script src="js/interest.js"></script>
 <script>
     function setHeight(obj) {
         obj.style.cssText = 'height:auto; padding:0';
