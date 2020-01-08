@@ -20,4 +20,8 @@ function switchTo(i,which) {
         document.getElementsByClassName("head_r")[i].addEventListener("webkitAnimationEnd", fun2);
     }
 }
-
+window.onload = function(){
+    var header = document.getElementsByClassName("header_frame")[0].contentWindow.document;
+    header.getElementById("to_interest").style.fontSize = "17px";
+    header.getElementById("to_interest").style.color = "#fff";
+};

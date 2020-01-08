@@ -379,27 +379,6 @@ body{
 }
 
 
-
-#to_top{
-    position: fixed;
-    display: none;
-    right: 20px;
-    bottom: 60px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/totop.png");
-    background-color: #fff;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position-y: 10px;
-    background-position-x: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 5px 0 #aaa;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-
 #publish{
     display: flex;
     width: 120px;

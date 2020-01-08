@@ -1,11 +1,18 @@
+window.onload = function(){
+    var header = document.getElementsByClassName("header_frame")[0].contentWindow.document;
+    header.getElementById("to_news").style.fontSize = "17px";
+    header.getElementById("to_news").style.color = "#fff";
+};
 function article_ani(innerStr) {
-    document.getElementsByClassName("article_list")[0].style.animation = "close_ani 0.1s";
-    setTimeout(() => {
-        document.getElementsByClassName("article_list")[0].style.animation = "show_ani 0.1s";
-        document.getElementsByClassName("article_list")[0].innerHTML = innerStr;
-    }, 80); 
+    var article_list = document.getElementsByClassName("article_list")[0];
+    function fun() {
+        article_list.innerHTML = innerStr;
+        article_list.style.animation = "show_ani 0.1s";
+        article_list.removeEventListener("webkitAnimationEnd", fun);
+    }
+    article_list.style.animation = "close_ani 0.1s";
+    article_list.addEventListener("webkitAnimationEnd", fun);
 }
-
 
 function latest() {
     var inner = `
@@ -744,11 +751,11 @@ function wallpaper() {
     `;
     article_ani(inner);
     setTimeout(() => {
-        (function(){
+        (function () {
             var length = document.getElementsByClassName("wallpaper").length;
-            for(var i=0;i<length;i++){
+            for (var i = 0; i < length; i++) {
                 console.log(i);
-                document.getElementsByClassName("wallpaper")[i].style.backgroundImage = "url(img/news/wallpaper/"+(i+1)+".jpg)";
+                document.getElementsByClassName("wallpaper")[i].style.backgroundImage = "url(img/news/wallpaper/" + (i + 1) + ".jpg)";
             }
         })();
     }, 100);
