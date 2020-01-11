@@ -22,6 +22,10 @@ window.onload = function(){
     var header = document.getElementsByClassName("header_frame")[0].contentWindow.document;
     header.getElementById("to_article").style.fontSize = "17px";
     header.getElementById("to_article").style.color = "#fff";
+    var publish = document.getElementById("publish");
+    publish.onclick = ()=>{
+        this.location = "write.html";
+    }
 };
 function article_ani(innerStr) {
     function fun() {

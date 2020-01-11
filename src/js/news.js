@@ -1,7 +1,8 @@
-window.onload = function(){
+window.onload = function () {
     var header = document.getElementsByClassName("header_frame")[0].contentWindow.document;
     header.getElementById("to_news").style.fontSize = "17px";
     header.getElementById("to_news").style.color = "#fff";
+    document.getElementsByClassName("line")[0].style.width = "32px";
 };
 function article_ani(innerStr) {
     var article_list = document.getElementsByClassName("article_list")[0];
@@ -13,8 +14,15 @@ function article_ani(innerStr) {
     article_list.style.animation = "close_ani 0.1s";
     article_list.addEventListener("webkitAnimationEnd", fun);
 }
-
+function setLine(num) {
+    var lines = document.getElementsByClassName("line");
+    for (let line of lines) {
+        line.style.width = "0px";
+    }
+    num == 3 ? lines[num].style.width = "64px" : lines[num].style.width = "32px";
+}
 function latest() {
+    setLine(0);
     var inner = `
     <div class="sentence">
                 <img src="img/news/latest/1.jpeg" id="s_back">
@@ -182,8 +190,8 @@ function latest() {
     `;
     article_ani(inner);
 }
-
 function product() {
+    setLine(1);
     var inner = `
         <div class="article_block"">
         <span class=" badge">产品</span>
@@ -404,8 +412,8 @@ function product() {
     `;
     article_ani(inner);
 }
-
 function flash() {
+    setLine(2);
     var inner = `
     <div class="article_block"">
     <span class=" badge">快讯</span>
@@ -626,8 +634,8 @@ function flash() {
     `;
     article_ani(inner);
 }
-
 function sentence() {
+    setLine(3);
     var inner = `
     <div class="sentence">
     <img src="img/news/sentence/1.jpeg" id="s_back">
@@ -723,6 +731,7 @@ function sentence() {
     article_ani(inner);
 }
 function wallpaper() {
+    setLine(4);
     var inner = `
     <div class="sentence wallpaper" id="wallpaper1">
             <span class="badge">酷图</span>
@@ -749,15 +758,19 @@ function wallpaper() {
             <p id="pic_title">宠物 黑色系狗狗壁纸 1080P</p>
         </div>
     `;
-    article_ani(inner);
-    setTimeout(() => {
-        (function () {
-            var length = document.getElementsByClassName("wallpaper").length;
-            for (var i = 0; i < length; i++) {
-                console.log(i);
-                document.getElementsByClassName("wallpaper")[i].style.backgroundImage = "url(img/news/wallpaper/" + (i + 1) + ".jpg)";
-            }
-        })();
-    }, 100);
+    // article_ani(inner);
+    var article_list = document.getElementsByClassName("article_list")[0];
+    function fun() {
+        article_list.innerHTML = inner;
+        article_list.style.animation = "show_ani 0.1s";
+        var length = document.getElementsByClassName("wallpaper").length;
+        for (var i = 0; i < length; i++) {
+            document.getElementsByClassName("wallpaper")[i].style.backgroundImage = "url(img/news/wallpaper/" + (i + 1) + ".jpg)";
+            article_list.removeEventListener("webkitAnimationEnd", fun);
+        }
+    }
+    article_list.style.animation = "close_ani 0.1s";
+    article_list.addEventListener("webkitAnimationEnd", fun);
+
 }
 

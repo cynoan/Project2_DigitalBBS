@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GAGA-新闻</title>
+    <title>GAGA-资讯</title>
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/news.css">
@@ -21,18 +21,20 @@
         <div class="cate_back">
             <table></table>
             <div class="cate_head">
-                <span>新闻</span>
-                <span>|</span>
-                <span>获取最新的数码资讯</span>
+                <div class="cate_title">
+                    <span>资讯</span>
+                    <span>|</span>
+                    <span>获取最新的数码资讯</span>
+                </div>
             </div>
         </div>
         <div id="news_nav">
             <div>
-                <div><a onclick="latest()">最新</a><span></span></div>
-                <div><a onclick="product()">产品</a><span></span></div>
-                <div><a onclick="flash()">快讯</a><span></span></div>
-                <div><a onclick="sentence()">每日一言</a><span></span></div>
-                <div><a onclick="wallpaper()">酷图</a><span></span></div>
+                <div><a onclick="latest()">最新</a><span class="line"></span></div>
+                <div><a onclick="product()">产品</a><span class="line"></span></div>
+                <div><a onclick="flash()">快讯</a><span class="line"></span></div>
+                <div><a onclick="sentence()">每日一言</a><span class="line"></span></div>
+                <div><a onclick="wallpaper()">酷图</a><span class="line"></span></div>
             </div>
         </div>
         <div class="article_list">
@@ -67,9 +69,9 @@
                     <span class="pub_time">5分钟前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -85,9 +87,9 @@
                     <span class="pub_time">5分钟前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -103,9 +105,9 @@
                     <span class="pub_time">5分钟前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -121,9 +123,9 @@
                     <span class="pub_time">5分钟前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -139,9 +141,9 @@
                     <span class="pub_time">1小时前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -157,9 +159,9 @@
                     <span class="pub_time">1小时前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -175,9 +177,9 @@
                     <span class="pub_time">1小时前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -193,9 +195,9 @@
                     <span class="pub_time">2小时前</span>
                 </div>
                 <div class="block_bottom">
-                    <img src="img/news/like.png">
+                    <img src="img/icon/like.png">
                     <span>99+</span>
-                    <img src="img/news/comment.png">
+                    <img src="img/icon/comment.png">
                     <span>99+</span>
                 </div>
             </div>
@@ -203,6 +205,7 @@
         <div id="load_more">加载更多</div>
         <div id="to_top" onclick="toTop()"></div>
     </section>
+    <iframe class="footer_frame" src="footer.html" frameborder="0" scrolling="no"></iframe>
 </body>
 <script src="js/news.js"></script>
 

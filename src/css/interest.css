@@ -4,46 +4,6 @@ body{
     background: #f0f0f0;
 }
 
-.cate_back{
-    width: 100%;
-    min-width: 1240px;
-    height: 74px;
-    box-shadow: 0 0 45px -30px #333;
-}
-.cate_head{
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    height: 74px;
-    margin: 0 auto;
-}
-.cate_title{
-    display: flex;
-    flex-flow: row nowrap;
-    margin-top: 17px;
-    margin-left: 10px;
-}
-.cate_title>span:first-child{
-    display: block;
-    font-size: 24px;
-    line-height: 46px;
-    color: #424e66;
-}
-.cate_title>span:nth-child(2){
-    display: block;
-    font-size: 24px;
-    line-height: 42px;
-    color: #424e66;
-    margin-left: 10px;
-}
-.cate_title>span:last-child{
-    display: block;
-    font-size: 16px;
-    line-height: 46px;
-    color: #666;
-    margin-left: 10px;
-}
-
 #sms_list{
     width: 1240px;
     margin: 40px auto 20px;
@@ -92,23 +52,23 @@ body{
     transition: all 0.2s;
 }
 #pb_left #emotion{
-    background: url("../img/interest/emotion.png");
+    background: url("../img/icon/emotion.png");
 }
 #pb_left #photo{
-    background: url("../img/interest/photo.png");
+    background: url("../img/icon/photo.png");
 }
 #pb_left #tag{
-    background: url("../img/interest/tag.png");
+    background: url("../img/icon/tag.png");
 }
 
 #pb_left #emotion:hover{
-    background: url("../img/interest/emotion1.png");
+    background: url("../img/icon/emotion1.png");
 }
 #pb_left #photo:hover{
-    background: url("../img/interest/photo1.png");
+    background: url("../img/icon/photo1.png");
 }
 #pb_left #tag:hover{
-    background: url("../img/interest/tag1.png");
+    background: url("../img/icon/tag1.png");
 }
 
 #pb_right{
@@ -133,13 +93,12 @@ body{
 }
 
 #publish_login{
-    display: flex;
+    display: none;
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 70px;
     width: 700px;
-    margin: 0 auto;
-    display: none;
+    margin: 20px auto 30px;
 }
 #publish_login>div:first-child{
     display: flex;
@@ -154,10 +113,10 @@ body{
 }
 #pb_login_btn{
     display: block;
-    width: 100px;
+    width: 120px;
     box-sizing: border-box;
     border: 0;
-    height: 36px;
+    height: 40px;
     outline: 0;
     background: linear-gradient(150deg, #38bdfb 30%, #e12f54 100%);
     border-radius: 20px;
@@ -165,10 +124,14 @@ body{
     opacity: 0.8;
     color: #fff;
     text-align: center;
-    line-height: 36px;
+    line-height: 40px;
     transition: all 0.3s;
-    margin-top: 17px;
-
+    margin-top: 14px;
+}
+#pb_login_btn:hover{
+    transform: scale(1.02);
+    opacity: 1;
+    box-shadow: 0 0 15px -5px #5c123a;
 }
 #hot_tags{
     width: 700px;
@@ -315,7 +278,7 @@ body{
 .in_more{
     width: 32px;
     height: 32px;
-    background: url("../img/interest/list/more.png");
+    background: url("../img/icon/more1.png");
     background-size: 100%;
     margin-top: 9px;
     cursor: pointer;

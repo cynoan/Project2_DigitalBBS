@@ -29,3 +29,16 @@
     from {opacity: 1; transform: translateX(0);}
     to {opacity: 0; transform: translateX(-300px);}
 }
+@keyframes logo1{
+    0%{margin-left: 0; margin-right: 0; transform: rotate(0deg);}
+    50%,60%{margin-left: -60px; margin-right: 60px; transform: rotate(-840deg);}
+    92%{margin-left: 10px; margin-right: -10px; transform: rotate(40deg);}
+    100%{margin-left: 0; margin-right: -0; transform: rotate(0deg);}
+}
+@keyframes logo2{
+    0%{transform:translateX(0);}
+    30%{transform:translateX(10px);}
+    60%{transform:translateX(0);}
+    80%{transform:translateX(5px);}
+    100%{transform:translateX(0);}
+}

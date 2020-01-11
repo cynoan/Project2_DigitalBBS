@@ -8,6 +8,7 @@
 a{
     text-decoration: none;
 }
+
 input:-webkit-autofill { 
     box-shadow: 0 0 0px 1000px #e1e1e1 inset !important;
     border-top-left-radius: 8px;
@@ -17,13 +18,20 @@ input:-webkit-autofill {
 .header_frame{
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 70px;
     top: 0;
     z-index: 999;
 }
 
 .header_placeholder{
-    height: 60px;
+    height: 70px;
+}
+
+.footer_frame{
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
 }
 
 html,body{
@@ -73,14 +81,55 @@ body.preload{
     bottom: 60px;
     width: 50px;
     height: 50px;
-    background-image: url("../img/totop.png");
-    background-color: #fff;
+    background-image: url("../img/icon/totop2.png");
+    background-color: #ddd;
     background-size: 60%;
     background-repeat: no-repeat;
     background-position-y: 10px;
     background-position-x: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 5px 0 #aaa;
+    box-shadow: 0 0 10px -4px #666;
+    opacity: 0.9;
     cursor: pointer;
     transition: all 0.2s;
+}
+
+.cate_back{
+    width: 100%;
+    min-width: 1240px;
+    height: 74px;
+    box-shadow: 0 0 45px -30px #333;
+}
+.cate_head{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 74px;
+    margin: 0 auto;
+}
+.cate_title{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+.cate_title>span:first-child{
+    display: block;
+    font-size: 24px;
+    line-height: 46px;
+    color: #424e66;
+}
+.cate_title>span:nth-child(2){
+    display: block;
+    font-size: 24px;
+    line-height: 42px;
+    color: #424e66;
+    margin-left: 10px;
+}
+.cate_title>span:last-child{
+    display: block;
+    font-size: 16px;
+    line-height: 46px;
+    color: #666;
+    margin-left: 10px;
 }

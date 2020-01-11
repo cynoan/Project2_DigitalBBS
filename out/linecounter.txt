@@ -1,0 +1,275 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.2
+-------------------------------------------------------------------------------
+count time : 2020-01-11 19:57:51
+count workspace : e:\WEB1910\Git\Project2_DigitalBBS
+total files : 255
+total code lines : 5362
+total comment lines : 56
+total blank lines : 163
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .js|           1504|             27|             33|     28|
+   |            .md|             16|              0|              0|   0.30|
+   |          .html|           1358|              4|             29|     25|
+   |           .css|           2484|             25|            101|     46|
+   -------------------------------------------------------------------------
+app.js, code is 10, comment is 0, blank is 4.
+pool.js, code is 10, comment is 0, blank is 1.
+README.md, code is 16, comment is 0, blank is 0.
+routes\user.js, code is 16, comment is 0, blank is 3.
+src\article.html, code is 226, comment is 2, blank is 3.
+src\css\animation.css, code is 38, comment is 0, blank is 6.
+src\css\article.css, code is 263, comment is 0, blank is 9.
+src\css\base.css, code is 126, comment is 0, blank is 9.
+src\css\footer.css, code is 109, comment is 0, blank is 1.
+src\css\header.css, code is 234, comment is 5, blank is 9.
+src\css\index.css, code is 435, comment is 1, blank is 18.
+src\css\interest.css, code is 359, comment is 1, blank is 14.
+src\css\news.css, code is 239, comment is 0, blank is 10.
+src\css\news_content.css, code is 512, comment is 1, blank is 22.
+src\css\swiper.min.css, code is 1, comment is 11, blank is 1.
+src\css\wallpaper.css, code is 12, comment is 0, blank is 1.
+src\css\write.css, code is 156, comment is 6, blank is 1.
+src\footer.html, code is 40, comment is 0, blank is 2.
+src\header.html, code is 61, comment is 0, blank is 3.
+src\img\article\all\1.jpeg, it is a binary file.
+src\img\article\all\10.png, it is a binary file.
+src\img\article\all\11.jpeg, it is a binary file.
+src\img\article\all\12.jpeg, it is a binary file.
+src\img\article\all\13.jpeg, it is a binary file.
+src\img\article\all\14.jpeg, it is a binary file.
+src\img\article\all\2.jpeg, it is a binary file.
+src\img\article\all\3.jpeg, it is a binary file.
+src\img\article\all\4.jpeg, it is a binary file.
+src\img\article\all\5.jpeg, it is a binary file.
+src\img\article\all\6.jpeg, it is a binary file.
+src\img\article\all\7.jpeg, it is a binary file.
+src\img\article\all\8.jpeg, it is a binary file.
+src\img\article\all\9.jpeg, it is a binary file.
+src\img\article\ba1.png, it is a binary file.
+src\img\article\ba2.png, it is a binary file.
+src\img\article\ba3.jpeg, it is a binary file.
+src\img\article\ba4.jpeg, it is a binary file.
+src\img\article\banner1.png, it is a binary file.
+src\img\article\banner2.jpeg, it is a binary file.
+src\img\article\banner3.jpeg, it is a binary file.
+src\img\article\banner4.png, it is a binary file.
+src\img\article\life\1.jpeg, it is a binary file.
+src\img\article\life\10.jpeg, it is a binary file.
+src\img\article\life\11.jpeg, it is a binary file.
+src\img\article\life\12.jpeg, it is a binary file.
+src\img\article\life\2.jpeg, it is a binary file.
+src\img\article\life\3.jpeg, it is a binary file.
+src\img\article\life\4.jpeg, it is a binary file.
+src\img\article\life\5.jpeg, it is a binary file.
+src\img\article\life\6.jpeg, it is a binary file.
+src\img\article\life\7.jpeg, it is a binary file.
+src\img\article\life\8.jpeg, it is a binary file.
+src\img\article\life\9.jpeg, it is a binary file.
+src\img\article\nav\all.png, it is a binary file.
+src\img\article\nav\life.png, it is a binary file.
+src\img\article\nav\other.png, it is a binary file.
+src\img\article\nav\pad.png, it is a binary file.
+src\img\article\nav\phone.png, it is a binary file.
+src\img\article\nav\photo.png, it is a binary file.
+src\img\article\other\1.jpeg, it is a binary file.
+src\img\article\other\10.jpeg, it is a binary file.
+src\img\article\other\11.jpeg, it is a binary file.
+src\img\article\other\12.png, it is a binary file.
+src\img\article\other\2.jpeg, it is a binary file.
+src\img\article\other\3.jpeg, it is a binary file.
+src\img\article\other\4.jpeg, it is a binary file.
+src\img\article\other\5.jpeg, it is a binary file.
+src\img\article\other\6.png, it is a binary file.
+src\img\article\other\7.jpeg, it is a binary file.
+src\img\article\other\8.png, it is a binary file.
+src\img\article\other\9.jpeg, it is a binary file.
+src\img\article\pad\1.jpeg, it is a binary file.
+src\img\article\pad\10.png, it is a binary file.
+src\img\article\pad\11.jpg, it is a binary file.
+src\img\article\pad\12.jpeg, it is a binary file.
+src\img\article\pad\2.jpeg, it is a binary file.
+src\img\article\pad\3.jpeg, it is a binary file.
+src\img\article\pad\4.jpeg, it is a binary file.
+src\img\article\pad\5.jpg, it is a binary file.
+src\img\article\pad\6.jpeg, it is a binary file.
+src\img\article\pad\7.jpeg, it is a binary file.
+src\img\article\pad\8.png, it is a binary file.
+src\img\article\pad\9.jpeg, it is a binary file.
+src\img\article\phone\1.jpeg, it is a binary file.
+src\img\article\phone\10.jpeg, it is a binary file.
+src\img\article\phone\11.jpeg, it is a binary file.
+src\img\article\phone\12.jpeg, it is a binary file.
+src\img\article\phone\13.jpeg, it is a binary file.
+src\img\article\phone\14.jpeg, it is a binary file.
+src\img\article\phone\2.jpeg, it is a binary file.
+src\img\article\phone\3.jpeg, it is a binary file.
+src\img\article\phone\4.jpeg, it is a binary file.
+src\img\article\phone\5.png, it is a binary file.
+src\img\article\phone\6.jpeg, it is a binary file.
+src\img\article\phone\7.jpeg, it is a binary file.
+src\img\article\phone\8.jpeg, it is a binary file.
+src\img\article\phone\9.jpeg, it is a binary file.
+src\img\article\photo\1.jpeg, it is a binary file.
+src\img\article\photo\10.jpeg, it is a binary file.
+src\img\article\photo\11.jpeg, it is a binary file.
+src\img\article\photo\12.jpeg, it is a binary file.
+src\img\article\photo\2.jpeg, it is a binary file.
+src\img\article\photo\3.jpeg, it is a binary file.
+src\img\article\photo\4.jpeg, it is a binary file.
+src\img\article\photo\5.jpeg, it is a binary file.
+src\img\article\photo\6.jpeg, it is a binary file.
+src\img\article\photo\7.jpeg, it is a binary file.
+src\img\article\photo\8.jpeg, it is a binary file.
+src\img\article\photo\9.jpeg, it is a binary file.
+src\img\avatars\1.jpg, it is a binary file.
+src\img\avatars\2.jpg, it is a binary file.
+src\img\avatars\3.png, it is a binary file.
+src\img\avatars\4.jpg, it is a binary file.
+src\img\avatars\5.jpeg, it is a binary file.
+src\img\avatars\6.jpg, it is a binary file.
+src\img\icon\blank_avatar.png, it is a binary file.
+src\img\icon\bold.png, it is a binary file.
+src\img\icon\close.png, it is a binary file.
+src\img\icon\close2.png, it is a binary file.
+src\img\icon\comment.png, it is a binary file.
+src\img\icon\comment1.png, it is a binary file.
+src\img\icon\comment_fff.png, it is a binary file.
+src\img\icon\emotion.png, it is a binary file.
+src\img\icon\emotion1.png, it is a binary file.
+src\img\icon\fontsize.png, it is a binary file.
+src\img\icon\gt.png, it is a binary file.
+src\img\icon\image.png, it is a binary file.
+src\img\icon\image2.png, it is a binary file.
+src\img\icon\like.png, it is a binary file.
+src\img\icon\like1.png, it is a binary file.
+src\img\icon\like_666.png, it is a binary file.
+src\img\icon\like_blank.png, it is a binary file.
+src\img\icon\like_fff.png, it is a binary file.
+src\img\icon\like_red.png, it is a binary file.
+src\img\icon\list.png, it is a binary file.
+src\img\icon\more.png, it is a binary file.
+src\img\icon\more1.png, it is a binary file.
+src\img\icon\more_666.png, it is a binary file.
+src\img\icon\password.png, it is a binary file.
+src\img\icon\photo.png, it is a binary file.
+src\img\icon\photo1.png, it is a binary file.
+src\img\icon\publish.png, it is a binary file.
+src\img\icon\quote.png, it is a binary file.
+src\img\icon\quote_reverse.png, it is a binary file.
+src\img\icon\relay.png, it is a binary file.
+src\img\icon\right_arrow.png, it is a binary file.
+src\img\icon\search.png, it is a binary file.
+src\img\icon\tag.png, it is a binary file.
+src\img\icon\tag1.png, it is a binary file.
+src\img\icon\totop.png, it is a binary file.
+src\img\icon\totop2.png, it is a binary file.
+src\img\icon\underline.png, it is a binary file.
+src\img\icon\url.png, it is a binary file.
+src\img\icon\weibo.png, it is a binary file.
+src\img\icon\weixin.png, it is a binary file.
+src\img\icon\write.png, it is a binary file.
+src\img\index\banner1.jpeg, it is a binary file.
+src\img\index\banner2.jpeg, it is a binary file.
+src\img\index\banner3.jpeg, it is a binary file.
+src\img\index\banner4.jpeg, it is a binary file.
+src\img\index\banner5.png, it is a binary file.
+src\img\index\tag1.jpeg, it is a binary file.
+src\img\index\tag2.jpeg, it is a binary file.
+src\img\index\tag3.jpeg, it is a binary file.
+src\img\index\tag4.jpeg, it is a binary file.
+src\img\index\tag5.jpeg, it is a binary file.
+src\img\interest\list\avatar1.jpg, it is a binary file.
+src\img\interest\list\avatar2.jpg, it is a binary file.
+src\img\interest\list\pic1.jpeg, it is a binary file.
+src\img\interest\list\pic2.jpeg, it is a binary file.
+src\img\interest\list\pic3.jpeg, it is a binary file.
+src\img\interest\list\pic4.jpeg, it is a binary file.
+src\img\interest\list\pic5.jpeg, it is a binary file.
+src\img\interest\list\pic6.jpeg, it is a binary file.
+src\img\interest\list\pic7.jpeg, it is a binary file.
+src\img\interest\list\pic8.jpeg, it is a binary file.
+src\img\interest\list\喜欢 (2).png, it is a binary file.
+src\img\login_head.png, it is a binary file.
+src\img\login_mask.png, it is a binary file.
+src\img\logo.png, it is a binary file.
+src\img\logo1.png, it is a binary file.
+src\img\logo2.png, it is a binary file.
+src\img\LOGO2019.png, it is a binary file.
+src\img\logo_999.png, it is a binary file.
+src\img\news\avatar1.jpg, it is a binary file.
+src\img\news\avatar2.jpg, it is a binary file.
+src\img\news\flash\1.jpeg, it is a binary file.
+src\img\news\flash\10.jpeg, it is a binary file.
+src\img\news\flash\11.jpeg, it is a binary file.
+src\img\news\flash\12.jpeg, it is a binary file.
+src\img\news\flash\2.jpeg, it is a binary file.
+src\img\news\flash\3.jpeg, it is a binary file.
+src\img\news\flash\4.jpeg, it is a binary file.
+src\img\news\flash\5.jpeg, it is a binary file.
+src\img\news\flash\6.jpeg, it is a binary file.
+src\img\news\flash\7.jpeg, it is a binary file.
+src\img\news\flash\8.jpeg, it is a binary file.
+src\img\news\flash\9.jpeg, it is a binary file.
+src\img\news\latest\1.jpeg, it is a binary file.
+src\img\news\latest\10.jpeg, it is a binary file.
+src\img\news\latest\11.png, it is a binary file.
+src\img\news\latest\2.jpeg, it is a binary file.
+src\img\news\latest\3.jpeg, it is a binary file.
+src\img\news\latest\4.jpeg, it is a binary file.
+src\img\news\latest\5.jpeg, it is a binary file.
+src\img\news\latest\6.jpeg, it is a binary file.
+src\img\news\latest\7.jpeg, it is a binary file.
+src\img\news\latest\8.jpeg, it is a binary file.
+src\img\news\latest\9.jpeg, it is a binary file.
+src\img\news\latest\wallpaper.jpg, it is a binary file.
+src\img\news\pic_mask.png, it is a binary file.
+src\img\news\product\1.jpeg, it is a binary file.
+src\img\news\product\10.jpeg, it is a binary file.
+src\img\news\product\11.jpeg, it is a binary file.
+src\img\news\product\12.jpeg, it is a binary file.
+src\img\news\product\2.jpeg, it is a binary file.
+src\img\news\product\3.jpeg, it is a binary file.
+src\img\news\product\4.jpeg, it is a binary file.
+src\img\news\product\5.jpeg, it is a binary file.
+src\img\news\product\6.jpeg, it is a binary file.
+src\img\news\product\7.jpeg, it is a binary file.
+src\img\news\product\8.jpeg, it is a binary file.
+src\img\news\product\9.jpeg, it is a binary file.
+src\img\news\sentence\1.jpeg, it is a binary file.
+src\img\news\sentence\2.jpeg, it is a binary file.
+src\img\news\sentence\3.jpeg, it is a binary file.
+src\img\news\sentence\4.jpeg, it is a binary file.
+src\img\news\sentence\5.jpeg, it is a binary file.
+src\img\news\sentence\6.jpeg, it is a binary file.
+src\img\news\wallpaper\1.jpg, it is a binary file.
+src\img\news\wallpaper\2.jpg, it is a binary file.
+src\img\news\wallpaper\3.jpg, it is a binary file.
+src\img\news\wallpaper\4.jpg, it is a binary file.
+src\img\news\wallpaper\5.jpg, it is a binary file.
+src\img\news\wallpaper\6.jpg, it is a binary file.
+src\img\news_list\1\1.jpeg, it is a binary file.
+src\img\news_list\1\2.jpeg, it is a binary file.
+src\img\news_list\1\3.jpeg, it is a binary file.
+src\img\qrcode.png, it is a binary file.
+src\img\wechat_avatar.jpg, it is a binary file.
+src\index.html, code is 320, comment is 2, blank is 8.
+src\interest.html, code is 196, comment is 0, blank is 3.
+src\js\article.js, code is 719, comment is 7, blank is 8.
+src\js\clearLoadAni.js, code is 5, comment is 0, blank is 1.
+src\js\comm.js, code is 32, comment is 0, blank is 2.
+src\js\footer.js, code is 20, comment is 0, blank is 0.
+src\js\header.js, code is 109, comment is 0, blank is 3.
+src\js\index.js, code is 61, comment is 7, blank is 6.
+src\js\interest.js, code is 30, comment is 0, blank is 2.
+src\js\news.js, code is 485, comment is 1, blank is 2.
+src\js\swiper.min.js, code is 1, comment is 12, blank is 1.
+src\js\wallpaper.js, code is 6, comment is 0, blank is 0.
+src\news.html, code is 209, comment is 0, blank is 3.
+src\news_content.html, code is 254, comment is 0, blank is 4.
+src\write.html, code is 52, comment is 0, blank is 3.
+===============================================================================

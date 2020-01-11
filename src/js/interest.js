@@ -20,8 +20,13 @@ function switchTo(i,which) {
         document.getElementsByClassName("head_r")[i].addEventListener("webkitAnimationEnd", fun2);
     }
 }
+function setHeight(obj) {
+    obj.style.cssText = 'height:auto; padding:0';
+    obj.style.cssText = 'height:' + obj.scrollHeight + 'px';
+}
 window.onload = function(){
     var header = document.getElementsByClassName("header_frame")[0].contentWindow.document;
     header.getElementById("to_interest").style.fontSize = "17px";
-    header.getElementById("to_interest").style.color = "#fff";
+    header.getElementById("to_interest").style.color = "#fff";   
 };
+

@@ -15,22 +15,23 @@
     <nav>
         <div id="nav">
             <div id="nav_left">
-                <img src="img/logo.png">
+                <img src="img/logo1.png">
+                <img src="img/logo2.png">
             </div>
             <div id="nav_center">
-                <a href="#" id="to_home">首页</a>
-                <a href="#" id="to_news">新闻</a>
-                <a href="#" id="to_article">文章</a>
-                <a href="#" id="to_interest">动态</a>
-                <a href="#" id="to_free">闲置</a>
+                <a href="index.html" id="to_home">首页</a>
+                <a href="news.html" id="to_news">资讯</a>
+                <a href="article.html" id="to_article">文章</a>
+                <a href="interest.html" id="to_interest">动态</a>
+                <a href="javascript:;" id="to_free">闲置</a>
             </div>
             <div id="search_bar">
-                <img src="img/search.png">
+                <img src="img/icon/search.png">
                 <input type="text" placeholder="搜索你感兴趣的……" id="search">
-                <img src="img/close2.png" onclick="close_search()">
+                <img src="img/icon/close2.png" onclick="close_search()">
             </div>
             <div id="nav_right">
-                <img src="img/search.png" id="search_img" onclick="show_search()">
+                <img src="img/icon/search.png" id="search_img" onclick="show_search()">
                 <span id="a_login" onclick="show_login()">登录</span>
             </div>
         </div>
@@ -39,14 +40,14 @@
             <div id="login">
                 <img src="img/login_head.png" id="login_head">
                 <img src="img/logo.png" alt="">
-                <img src="img/close.png" onclick="close_login()">
+                <img src="img/icon/close.png" onclick="close_login()">
                 <div>
                     <div id="account">
                         <input type="text" placeholder="请输入账户" id="uname">
                     </div>
                     <div id="password">
                         <input type="password" placeholder="请输入密码" id="upwd">
-                        <img src="img/password.png" alt="" id="show_password" onclick="show_pwd()">
+                        <img src="img/icon/password.png" alt="" id="show_password" onclick="show_pwd()">
                     </div>
                     <a href="" id="forgot">忘记密码?</a>
                     <button id="btn_login" onclick="login()">登录</button>
@@ -59,4 +60,5 @@
     </nav>
 </body>
 <script src="js/header.js"></script>
+
 </html>
