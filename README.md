@@ -1,5 +1,5 @@
-# Project2_DigitalBBS
-项目2，数码论坛
+# DigitalBBS
+GAGA数码论坛
 # Version1.07
 首页、文章详情、文章编写页静态开发完成。此前开发页面均有动效。 --- 1/11
 # Version1.06
